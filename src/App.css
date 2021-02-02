@@ -14,10 +14,10 @@
   background:rgba(27, 27, 27, 0.5);
   border-bottom:1px solid rgb(0, 0, 0);
   height: 2.75rem;
-  display:flex;
+  display: flex;
   align-items: center;
   padding: 0 12px;
-  font-size:1.2rem;
+  font-size: 1.2rem;
   color:white;
   font-weight: bold;
 }
@@ -34,9 +34,9 @@
 
 .text-input{
   background:rgba(255,255,255,0.2);
-  border-color: white;
-  border-top:1px solid rgb(0, 0, 0);
+  border-top: 1px solid rgb(0, 0, 0);
   height: 4rem;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,21 +49,44 @@
   padding-left: 1rem;
   color: white;
   height: 1.75rem;
-  width: 90%;
+  width: calc(90% - 0.25rem);
   position: absolute;
 }
 
 .button{
+  position: absolute;
+  right: 3.25%; 
   border-color: white;
   border-radius: 1.75rem;
   background: url(./img/arrow-up-blk-white.png);
+  cursor: pointer;
   background-size: cover;
   height: 1.75rem;
   width: 1.75rem;
-  position: absolute;
-  right: 3.25%; 
 }
 
 .button:disabled{
   opacity: 0.5;
+  cursor: default;
+}
+
+.messages{
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1;
+  overflow: auto;
+}
+
+.message-row{
+  width: 100%;
+}
+
+.message{
+  background:black;
+  color:white;
+  border-radius: 10px;
+  margin: 4px;
+  right: 0.5rem;
+  display: inline-block;
+  padding: 4px 12px;
 }

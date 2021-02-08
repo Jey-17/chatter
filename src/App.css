@@ -1,8 +1,9 @@
 .App {
   text-align: center;
-  background: #de6161;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background-image: url(./img/bg_one.png); */
+  background-color: rgb(26, 26, 26);
+  background-size: cover;
+  background-position: center;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -13,23 +14,47 @@
 .header{
   background:rgba(27, 27, 27, 0.5);
   border-bottom:1px solid rgb(0, 0, 0);
-  height: 2.75rem;
+  height: 3.25rem;
   display: flex;
   align-items: center;
-  padding: 0 12px;
-  font-size: 1.2rem;
-  color:white;
+  justify-content: center;
+  color: rgb(243, 168, 168);
+  font-size: 1.7rem;
   font-weight: bold;
+  font-family: 'Grotto';
 }
 
 .logo{
   height: 1.8rem;
   width: 1.8rem;
   margin-right: 10px;
-  background: url(./img/bird-dance.gif);
+  background: url(./img/cherry.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.messages{
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1;
+  overflow: auto;
+}
+
+.message-row{
+  width: 77%;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 20%;
+}
+
+.message{
+  background:rgba(0, 0, 0, 0.8);
+  color:white;
+  border-radius: 10px;
+  margin: 4px;
+  display: inline-block;
+  padding: 8px 8px;
 }
 
 .text-input{
@@ -48,6 +73,7 @@
   border-radius: 1.5rem;
   padding-left: 1rem;
   color: white;
+  font-family: -apple-system, BlinkMacSystemFont;
   height: 1.75rem;
   width: calc(90% - 0.25rem);
   position: absolute;
@@ -70,23 +96,11 @@
   cursor: default;
 }
 
-.messages{
-  display: flex;
-  flex-direction: column-reverse;
-  flex: 1;
-  overflow: auto;
-}
-
-.message-row{
-  width: 100%;
-}
-
-.message{
-  background:black;
-  color:white;
+.personOne{
+  background: url(./img/cherry.png);
+  background-size: contain;
   border-radius: 10px;
   margin: 4px;
-  right: 0.5rem;
-  display: inline-block;
-  padding: 4px 12px;
+  height: 1.5rem;
+  width: 1.5rem;
 }

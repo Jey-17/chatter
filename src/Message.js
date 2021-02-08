@@ -4,6 +4,7 @@ function Message(props){
     <div className= "message">
       {props.text}
     </div>
+    <div className= "personOne"/>
   </div>
 }
 

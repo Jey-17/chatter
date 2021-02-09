@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   /* background-image: url(./img/bg_one.png); */
@@ -57,6 +61,24 @@
   padding: 8px 8px;
 }
 
+.personOne{
+  background: url(./img/cherry.png);
+  background-size: contain;
+  border-radius: 10px;
+  margin: 4px;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.message-name{
+  position: absolute;
+  top: -10px;
+  left: 7px;
+  font-size: 0.55rem;
+  color:black;
+  font-weight: bold;
+}
+
 .text-input{
   background:rgba(255,255,255,0.2);
   border-top: 1px solid rgb(0, 0, 0);
@@ -91,16 +113,49 @@
   width: 1.75rem;
 }
 
-.button:disabled{
+.button[disabled]{
   opacity: 0.5;
   cursor: default;
 }
 
-.personOne{
-  background: url(./img/cherry.png);
-  background-size: contain;
-  border-radius: 10px;
-  margin: 4px;
-  height: 1.5rem;
-  width: 1.5rem;
+.inputx{
+  border:1px solid white;
+  border-radius:1.6rem;
+  height:1.6rem;
+  width:calc(100% - 20px);
+  background: rgba(0,0,0,0.85);
+  color:white;
+  padding:0 10px;
+  outline:none;
+}
+.send-buttonx{
+  position:absolute;
+  right:12px;
+  top:0.55rem;
+  border-radius:100%;
+  background:white;
+  color:black;
+  border:none;
+  height: 1.4rem;
+  width: 1.4rem;
+  cursor: pointer;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  outline:none;
+}
+
+.send-buttonx[disabled]{
+  cursor: default;
+  background:grey;
+}
+
+.name-picker{
+  display:flex;
+  margin:0 12px;
+}
+
+.name-picker input{
+  max-width:100px;
 }

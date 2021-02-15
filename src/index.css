@@ -1,9 +1,3 @@
-
-@font-face {
-  font-family: Grotto;
-  src: url(./tf/Grotto.ttf);
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,4 +10,27 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* mobile */
+html {
+  font-size: 14px;
+}
+/* tablet */
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+}
+/* desktop */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+/* extra large */
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
 }

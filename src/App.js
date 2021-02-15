@@ -1,3 +1,5 @@
+
+
 import {useState} from 'react';
 import './App.css';
 import TextInput from './TextInput';
@@ -16,7 +18,7 @@ function App() {
  
     <header className="header">
       <div className="logo" />
-      FRUITY CHATTER
+      CHATTER
       <NamePicker saveName={setUsername} />
     </header>
 
@@ -30,10 +32,6 @@ function App() {
     <TextInput 
       send={(t)=> db.send({text:t, name:username, date:new Date()})}
     />
-    
-    {/* <TextInput 
-      send={(t)=> db.send({text:t, name:username, date:new Date()})}
-    /> */}
 
   </div>
 }

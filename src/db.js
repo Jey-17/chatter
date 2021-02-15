@@ -6,6 +6,7 @@ import "firebase/storage"
 let store
 const coll = 'messages'
 
+// eslint-disable-next-line
 function useDB(room) {
     const [messages, setMessages] = useState([])
 
@@ -54,4 +55,4 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig)
-store = firebase.firestore()
+store = firebase.firestore() 

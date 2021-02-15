@@ -1,6 +1,5 @@
 
-import {useState} from 'react'
-import { AiOutlineSend } from "react-icons/ai";
+import {useState} from 'react'  // importing useState from react
 
 function TextInput(props) {
   const [text, setText] = useState('')
@@ -23,11 +22,7 @@ function TextInput(props) {
       onChange={e=> setText(e.target.value)}
       onKeyPress={keyPressed}
     />
-    <button onClick={sendMessage} disabled={!text} className="send-button">
-      <AiOutlineSend title="send" 
-        style={{minWidth:'0.7rem',marginLeft:2}} 
-      />
-    </button>
+    <button onClick={sendMessage} disabled={!text} className= "send-button"/>
   </footer>
 }
 
